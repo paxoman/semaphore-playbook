@@ -2,6 +2,6 @@
 - hosts: my_servers
   become: true
   tasks:
-    - name: Print OS info
-      ansible.builtin.package:
-        name: apache2
+    -name: Ping all hosts
+     ansible.builtin.ping:
+
