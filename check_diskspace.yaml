@@ -1,6 +1,6 @@
 ---
 - name: Check disk space
-  hosts: "{{ all_servers | d([]) }}"
+  hosts: all_servers
 
   tasks:
     - name: Check disk space available
