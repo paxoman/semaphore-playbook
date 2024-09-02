@@ -1,6 +1,6 @@
 ---
 - name: Deploy traefik v2.5
-  hosts: "{{ my_hosts | d([]) }}"
+  hosts: web_servers
 
   tasks:
     - name: Deploy traefik
@@ -15,4 +15,4 @@
           - /etc/traefik:/etc/traefik
         restart_policy: unless-stopped
       become: true
-      become_user: "{{ lookup('env', 'USER') }}"
+      become_user: paxoman
