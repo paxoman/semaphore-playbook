@@ -1,6 +1,6 @@
 ---
 - name: Install Docker Engine
-  hosts: all
+  hosts: test
   become: yes
  
   tasks:
